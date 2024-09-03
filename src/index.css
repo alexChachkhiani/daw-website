@@ -1,0 +1,19 @@
+body {
+  font-family: "Libre Franklin", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(25, 25, 25);
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(50, 50, 50);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(160, 160, 160);
+  outline: 1px solid rgb(100, 120, 140);
+}

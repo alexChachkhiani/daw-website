@@ -1,0 +1,143 @@
+.top-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img,
+p,
+span,
+a {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+p,
+a,
+span {
+  color: rgb(220, 220, 220);
+  display: inline-block;
+  font-size: 1.25vw;
+  line-height: 2rem;
+}
+
+img {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+p:hover,
+a:hover {
+  color: rgb(245, 245, 245);
+}
+
+p span {
+  color: rgb(100, 125, 255);
+}
+
+p span:hover {
+  color: rgb(125, 150, 255);
+}
+
+.top-navbar-1 {
+  align-items: center;
+  margin: 20px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.left-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.try-newdaw {
+  color: rgb(255, 50, 50);
+}
+
+.try-newdaw:hover {
+  color: rgb(255, 75, 75);
+}
+
+.log-in {
+  font-size: 0.95rem;
+  color: rgb(220, 220, 220);
+}
+
+.log-in:hover {
+  color: rgb(245, 245, 245);
+}
+
+.hidden-navbar {
+  padding: 25px 25px;
+}
+
+.hidden-navbar-1,
+.hidden-navbar-2 {
+  padding: 25px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: rgb(220, 220, 220);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.next-to-each-other {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.hidden-navbar-2 {
+  font-size: 2rem;
+}
+
+.hidden-navbar-2 span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hidden-navbar-2 p {
+  font-size: 1.1rem;
+}
+
+.hidden-navbar-2-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-navbar {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(25, 25, 25, 0.75);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1vw;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 0 100px;
+}
