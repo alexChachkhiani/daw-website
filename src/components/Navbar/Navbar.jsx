@@ -79,7 +79,7 @@ function TopNavbar() {
               <div className="text-box">
                 <span>Loop</span>
                 <p>
-                  Watch Talks, Performances and Features from Ableton's Summit
+                  Watch Talks, Performances and Features from NewDaw's Summit
                   for Music Makers
                 </p>
               </div>
