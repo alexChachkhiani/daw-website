@@ -17,7 +17,7 @@ a,
 span {
   color: rgb(220, 220, 220);
   display: inline-block;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   line-height: 2rem;
 }
 
@@ -99,13 +99,12 @@ h3 {
 }
 
 .hidden-navbar-2 span {
-  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .hidden-navbar-2 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .hidden-navbar-2-5 {
@@ -132,7 +131,7 @@ h3 {
 
 a {
   text-decoration: none;
-  font-size: 1.1vw;
+  font-size: 1.2rem;
 }
 
 .navbar-items {
