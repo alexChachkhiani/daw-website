@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -7,7 +8,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  margin: 0 75px 150px 75px;
+  margin: 0 75px 125px 75px;
   display: flex;
   align-items: center;
   align-self: center;
@@ -33,4 +34,76 @@
 .header-image img {
   width: 100%;
   cursor: auto;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 300px 150px 300px;
+}
+.text-container h2 {
+  margin-bottom: 25px;
+}
+
+.text-container h2 span {
+  color: rgb(100, 125, 255);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.text-container h2 span:hover {
+  color: rgb(125, 150, 255);
+}
+
+.text-container p {
+  cursor: auto;
+  transition: none;
+}
+
+.introduction-images {
+  margin: 0 0px 125px 75px;
+}
+
+.introduction-image-1 {
+  width: 40vw;
+  height: 40vw;
+  margin: 10vw 0 0 75px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.introduction-images-color {
+  position: relative;
+  background-color: rgb(255, 225, 125);
+  width: 60vw;
+  height: 60vw;
+  float: right;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction-images-color img {
+  width: 30vw;
+  height: 20vw;
+  cursor: auto;
+  margin-left: 75px;
+}
+
+.video {
+  margin: 0 300px 150px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+video {
+  width: 100%;
+}
+
+.video-text p {
+  padding: 10px;
+  font-size: 0.95rem;
 }

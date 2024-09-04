@@ -17,3 +17,34 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(160, 160, 160);
   outline: 1px solid rgb(100, 120, 140);
 }
+
+p,
+a,
+span,
+h2 {
+  color: rgb(220, 220, 220);
+  display: inline-block;
+  line-height: 2rem;
+}
+
+p,
+a,
+span {
+  font-size: 1.2rem;
+}
+
+h2,
+h2 span {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500px;
+}
+
+h2 span {
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500px;
+}

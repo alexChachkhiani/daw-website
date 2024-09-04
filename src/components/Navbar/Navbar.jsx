@@ -11,7 +11,8 @@ function TopNavbar() {
   };
 
   const linkStyles = (index) => ({
-    color: selectedIndex === index ? "#00e6e6" : "#dcdcdc",
+    color:
+      selectedIndex === index ? "rgb(125, 150, 255)" : "rgb(245, 245, 245)",
     cursor: "pointer",
     marginRight: "10px",
   });
@@ -21,7 +22,7 @@ function TopNavbar() {
   };
 
   return (
-    <>
+    <div className="navbar">
       <div
         className={"top-navbar"}
         style={{
@@ -121,7 +122,7 @@ function TopNavbar() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
