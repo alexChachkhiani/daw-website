@@ -45,7 +45,7 @@ function TopNavbar() {
           </p>
         </div>
         <div className="top-navbar-1 left-div">
-          <p className="try-newdaw">Try NewDaw 1.3.4 for Free</p>
+          <p id="try-newdaw">Try NewDaw 1.3.4 for Free</p>
           <p>
             <span className="log-in">Log In or Sign Up</span>
           </p>

@@ -1,3 +1,12 @@
+:root {
+  --primary-text-color: rgb(220, 220, 220);
+  --hover-text-color: rgb(245, 245, 245);
+  --primary-highlight-color: rgb(100, 125, 255);
+  --hover-highlight-color: rgb(125, 150, 255);
+  --danger-color: rgb(255, 50, 50);
+  --danger-hover-color: rgb(255, 75, 75);
+}
+
 .top-navbar {
   display: flex;
   flex-direction: row;
@@ -9,36 +18,39 @@
 .navbar span,
 .navbar a {
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s ease;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
   width: 50px;
-  display: flex;
-  flex-direction: row;
+  height: auto;
   display: inline-block;
   vertical-align: middle;
 }
 
 .navbar p:hover,
 .navbar a:hover {
-  color: rgb(245, 245, 245);
+  color: var(--primary-text-color);
 }
 
 .navbar p span {
-  color: rgb(100, 125, 255);
+  color: var(--primary-highlight-color);
 }
 
 .navbar p span:hover {
-  color: rgb(125, 150, 255);
+  color: var(--hover-highlight-color);
 }
 
 .top-navbar-1 {
   align-items: center;
-  margin: 20px 25px;
+  margin: 1.25rem 1.5625rem;
+  gap: 1.5625rem;
   display: flex;
   flex-direction: row;
-  gap: 25px;
 }
 
 .left-div {
@@ -46,53 +58,53 @@ img {
   flex-direction: row;
 }
 
-.try-newdaw {
-  color: rgb(255, 50, 50);
+#try-newdaw {
+  color: var(--danger-color);
 }
 
-.try-newdaw:hover {
-  color: rgb(255, 75, 75);
+#try-newdaw:hover {
+  color: var(--danger-hover-color);
 }
 
 .log-in {
   font-size: 0.95rem;
-  color: rgb(220, 220, 220);
+  color: var(--primary-text-color);
 }
 
 .log-in:hover {
-  color: rgb(245, 245, 245);
+  color: var(--primary-highlight-color);
 }
 
 .hidden-navbar {
-  padding: 25px 25px;
+  padding: 1.5625rem 1.5625rem;
 }
 
 .hidden-navbar-1,
 .hidden-navbar-2 {
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 h3 {
-  color: rgb(220, 220, 220);
-  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  margin-bottom: 1.25rem;
   font-weight: 500;
 }
 
 .next-to-each-other {
   display: flex;
-  flex-direction: row;
-  gap: 25px;
+  flex-wrap: wrap;
+  gap: 1.5625rem;
 }
 
 .hidden-navbar-2 span {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .hidden-navbar-2-5 {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
 .text-box {
@@ -105,19 +117,31 @@ h3 {
   z-index: 10000;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   background-color: rgba(25, 25, 25, 0.75);
 }
 
-a {
-  text-decoration: none;
-}
-
 .navbar-items {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 1.5625rem;
   margin: 0 100px;
+}
+
+@media (max-width: 768px) {
+  .navbar-items {
+    margin: 0 25px;
+    gap: 10px;
+  }
+
+  .top-navbar-1 {
+    margin: 10px 15px;
+    gap: 15px;
+  }
+
+  img {
+    width: 30px;
+  }
 }

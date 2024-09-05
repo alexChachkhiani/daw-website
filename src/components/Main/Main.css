@@ -1,18 +1,28 @@
+:root {
+  --primary-red: rgb(255, 50, 50);
+  --primary-blue: rgb(100, 125, 255);
+  --hover-blue: rgb(125, 150, 255);
+  --background-yellow: rgb(255, 250, 140);
+  --background-green: rgb(100, 255, 125);
+  --background-purple: rgb(210, 175, 255);
+  --text-gray: rgb(50, 50, 50);
+}
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 2.5px 5px -5px rgb(240, 240, 240);
+  box-shadow: 0 2.5px 5px rgba(240, 240, 240, 0.1);
 }
 
 .header-image {
   position: relative;
   z-index: 1;
   text-align: center;
-  margin: 0 75px 125px 75px;
   display: flex;
   align-items: center;
   align-self: center;
+  margin: 0 9.375rem 9.375rem 9.375rem;
 }
 
 .h1-box {
@@ -20,13 +30,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 0.625px 1.25rem;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 .h1-box h1 {
-  color: rgb(255, 50, 50);
+  color: var(--primary-red);
   font-size: 7.5vw;
   font-weight: 500;
   user-select: none;
@@ -41,22 +51,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 300px 150px 300px;
+  margin: 0 12.5rem 9.375rem 12.5rem;
 }
 
 .text-container h2,
 .text-container p {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
-.text-container h2 span {
-  color: rgb(100, 125, 255);
-  transition: 0.2s;
+.text-container h2 span,
+.text-inside-div h2 span {
+  color: var(--hover-blue);
+  transition: 0.2s ease;
   cursor: pointer;
 }
 
 .text-container h2 span:hover {
-  color: rgb(125, 150, 255);
+  color: var(--hover-blue);
 }
 
 .text-container p {
@@ -65,20 +76,20 @@
 }
 
 .introduction-images {
-  margin: 0 0px 125px 75px;
+  margin: 0px 1.5625rem 4.6875rem;
 }
 
 .introduction-image-1 {
   width: 40vw;
-  height: 40vw;
-  margin: 10vw 0 0 75px;
+  height: auto;
+  margin: 10vw 0 0 4.6875rem;
   z-index: 1000;
   position: absolute;
 }
 
 .introduction-images-color {
   position: relative;
-  background-color: rgb(255, 250, 140);
+  background-color: var(--background-yellow);
   width: 60vw;
   height: 60vw;
   float: right;
@@ -90,13 +101,21 @@
 
 .introduction-images-color img {
   width: 30vw;
-  height: 20vw;
+  height: auto;
   cursor: auto;
-  margin-left: 75px;
+  margin-left: 4.6875rem;
+}
+
+.div-and-two-images,
+.introduction-images-color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .video {
-  margin: 0 300px 150px 300px;
+  margin: 0 12.5rem 9.375rem 12.5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -107,19 +126,19 @@ video {
 }
 
 .video-text p {
-  padding: 10px;
+  padding: 0.625rem;
   font-size: 0.95rem;
 }
 
 .div-and-images {
-  margin: 0 0 125px 0;
+  margin: 0 0 7.8125rem 0;
   display: flex;
   flex-direction: row;
 }
 
 .div-and-two-images {
   position: relative;
-  background-color: rgb(100, 255, 125);
+  background-color: var(--background-green);
   width: 60vw;
   height: 60vw;
   float: left;
@@ -128,19 +147,19 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 125px;
+  gap: 7.8125rem;
 }
 
 .div-and-two-images img {
   width: 30vw;
-  height: 22vw;
+  height: auto; /* Prevent image distortion */
   cursor: auto;
 }
 
 .man-making-music-img {
   width: 40vw;
   height: 56vw;
-  margin: 2vw 0 0 50vw;
+  margin: 2rem 0 0 50vw;
   z-index: 1000;
   position: absolute;
   float: right;
@@ -149,12 +168,12 @@ video {
 .group-work-div {
   display: flex;
   justify-content: center;
-  margin: 0 75px 125px 75px;
+  margin: 0 9.375rem 9.375rem 9.375rem;
 }
 
 .img-container {
   position: relative;
-  background-color: rgb(210, 175, 255);
+  background-color: var(--background-purple);
   width: 60vw;
   height: 60vw;
   position: relative;
@@ -184,21 +203,24 @@ video {
 
 .image-next-to-div {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 75px 125px 75px;
+  align-items: stretch; /* Make sure items stretch to equal height */
+  justify-content: space-between; /* Ensures space is distributed between elements */
+  height: 100%; /* Ensures the container takes up full available height */
+  width: 100%; /* Ensures the container takes up full available width */
+  margin: 0 0 9.375rem 0;
 }
 
 .image-next-to-div img {
-  width: 40vw;
-  height: 40vw;
+  flex: 1;
+  max-width: 50%;
+  width: auto;
+  height: auto;
 }
 
 .div-with-text {
-  width: 40vw;
-  height: 40vw;
-  background-color: rgb(50, 50, 50);
+  flex: 1;
+  max-width: 50%;
+  background-color: var(--text-gray);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,18 +228,8 @@ video {
 }
 
 .text-inside-div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   padding: 50px;
-}
-
-.text-inside-div h2 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.text-inside-div h2 span {
-  color: rgb(100, 125, 255);
-}
-
-.text-inside-div h2 span:hover {
-  color: rgb(125, 150, 255);
 }
