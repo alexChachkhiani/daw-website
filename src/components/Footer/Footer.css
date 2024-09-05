@@ -1,0 +1,169 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  margin: 125px 75px 125px 75px;
+}
+
+.span-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 7.5px;
+}
+
+.ooter p:hover {
+  color: rgb(245, 245, 245);
+}
+
+.footer img,
+.footer p {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 75px;
+}
+
+.footer-container-1,
+.footer-container-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 175px;
+}
+
+.social-medias,
+.education,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-and-button {
+  display: flex;
+  width: 100%;
+}
+
+.email-long {
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  background-color: rgb(50, 50, 50);
+  border: none;
+  color: rgb(245, 245, 245);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.input-container button {
+  border: none;
+  color: rgb(245, 245, 245);
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgb(100, 125, 255);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-container button:hover {
+  background-color: rgb(125, 150, 255);
+}
+
+input,
+button {
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+select {
+  background-color: rgb(50, 50, 50);
+  border: none;
+  color: rgb(245, 245, 245);
+  width: 150px;
+  height: 25px;
+}
+
+select::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+select option {
+  background-color: rgb(50, 50, 50);
+}
+
+select:focus {
+  outline: none;
+  border: none;
+}
+
+.last-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texts {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.texts p {
+  font-size: 0.9rem;
+}
+
+.made-in-berlin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.made-in-berlin p {
+  font-size: 0.9rem;
+}
+
+.made-in-berlin img {
+  height: 50px;
+  width: auto;
+  margin-left: 25px;
+}

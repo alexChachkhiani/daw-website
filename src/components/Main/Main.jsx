@@ -165,7 +165,7 @@ function Main() {
               us.
             </h2>
             <h2>
-              <span>See Latest Jobs &#x261B;</span>
+              <span>See Latest Jobs&nbsp; &#x27A4;</span>
             </h2>
           </div>
         </div>

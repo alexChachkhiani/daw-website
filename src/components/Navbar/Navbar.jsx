@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logoImage from "../../assets/newdaw_icon_white.png";
+import LogoImage from "../../assets/newdaw_icon_white.png";
 
 function TopNavbar() {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -30,7 +30,7 @@ function TopNavbar() {
         }}
       >
         <div className="top-navbar-1">
-          <img src={logoImage} alt="NewDaw Icon" />
+          <img src={LogoImage} alt="NewDaw Icon" />
           <p>Live</p>
           <p>Push</p>
           <p>Note</p>
