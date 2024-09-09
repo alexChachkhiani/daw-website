@@ -2,7 +2,7 @@
 
 <p id="description">This website is a clone of Ableton's About page built in React.</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀 Website Demo</h2>
 
 [Website Link](https://alexchachkhiani.github.io/daw-website/)
 
