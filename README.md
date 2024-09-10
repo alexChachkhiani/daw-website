@@ -1,6 +1,6 @@
 <h1 align="center" id="title">NewDaw Website</h1>
 
-<p id="description">This website is a clone of Ableton's About page built in React.</p>
+<p id="description">This site is a clone of Ableton's About page built in React.</p>
 
 <h2>🚀 Website Demo</h2>
 
