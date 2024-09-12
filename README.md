@@ -4,7 +4,7 @@
 
 <h2>🚀 Website Demo</h2>
 
-[Website Link](https://alexchachkhiani.github.io/daw-website/)
+[Website link](https://alexchachkhiani.github.io/daw-website/)
 
 <h2>🧐 Features</h2>
 
